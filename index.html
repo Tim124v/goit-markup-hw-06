@@ -36,16 +36,16 @@
                     <li><a href="tel:+110001111111" class="address-list">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="burger-btn">
-                <svg  width="24" height="24">
+            <button type="button" class="burger-btn" data-mobile-open>
+                <svg class="burger-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-burger-btn"></use>
                 </svg>
             </button>
         </div>
         <!--mobile menu-->
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-mobile>
             <div class="mobile-container">
-                <button class="mobile-close-btn" type="button">
+                <button class="mobile-close-btn" type="button" data-mobile-close>
                     <svg class="icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-close-black">
                         </use>
@@ -64,32 +64,36 @@
                         <li><a href="tel:+110001111111" class="mobile-contacts">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
+
                 <ul class="media-mobile-ul">
                     <li class="mobile-media-li">
                         <a class="mobile-link" target="_blank" href="https://www.instagram.com">
                             <svg class="icon" width="24" height="24">
-                                <use href="./images/icons.svg#instagram"></use>
+                                <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="sm-mobile-box">
-                        <a class="mobile-link" target="_blank" href="https://www.x.com"><svg class="icon"
+                    <li class="mobile-media-li">
+                        <a class="mobile-link" target="_blank" href="https://www.x.com">
+                            <svg class="icon"
                                 width="24" height="24">
-                                <use href="./images/icons.svg#twitter"></use>
+                                <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="sm-mobile-box">
-                        <a class="mobile-link" target="_blank" href="https://www.facebook.com/"><svg class="icon"
+                    <li class="mobile-media-li">
+                        <a class="mobile-link" target="_blank" href="https://www.facebook.com/">
+                            <svg class="icon"
                                 width="24" height="24">
-                                <use href="./images/icons.svg#facebook"></use>
+                                <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="sm-mobile-box">
-                        <a class="mobile-link" target="_blank" href="https://www.linkedin.com"><svg class="icon"
+                    <li class="mobile-media-li">
+                        <a class="mobile-link" target="_blank" href="https://www.linkedin.com">
+                            <svg class="icon"
                                 width="24" height="24">
-                                <use href="./images/icons.svg#linkedin"></use>
+                                <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
@@ -97,12 +101,14 @@
             </div>
         </div>
     </header>
-    <main>
+       <main>
         <!--Section1 Hero-->
         <section class="section section-one">
             <div class="container section-one-hero">
                 <h1 class="section-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="btn-order">Order Service</button>
+                <button type="button" class="btn-order" data-modal-open>
+                    Order Service
+                </button>
             </div>
         </section>
         <!--Section2 Features-->
@@ -120,7 +126,7 @@
                         <p class="feature-text">
                             Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.
-                        </p>
+                        </p>   
                     </li>
                     <li class="feature-item">
                         <div class="feature-icon">
@@ -207,8 +213,7 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/tom-ford.jpg/" srcset="./images/tom-ford.jpg 1x, ./images/tomford-2x.jpg 2x"
-                            width="264" alt="Tom Ford">
+                        <img src="./images/tom-ford.jpg" srcset="./images/tom-ford.jpg 1x, ./images/tomford-2x.jpg 2x" width="264" alt="Tom Ford">
                         <div class="dscr">
                             <h3 class="section-title-three">Tom Ford</h3>
                             <p class="our-team-text">Frontend Developer</p>
@@ -487,7 +492,7 @@
             </div>
             <div class="footer-media">
                 <p class="text-madia">Social media</p>
-                <ul class="text-madia">
+                <ul class="madia-ul">
                     <li class="footer-li">
                         <a class="footer-a" target="_blank" href="https://www.instagram.com">
                             <svg class="footer-svg" width="24" height="24">
@@ -542,9 +547,9 @@
         </div>
     </footer>
     <!--Modal window-->
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
         <div class="modal-window">
-            <button class="modal-btn" type="button">
+            <button class="modal-btn" data-modal-close type="button">
                 <svg class="modal-sv" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black">
                     </use>
@@ -614,7 +619,7 @@
                 <button class="checkbox-btn" type="submit">Send</button>
             </form>
         </div>
-
     </div>
+    <script src="./css/js/mobile.js"></script>
 </body>
 </html>
